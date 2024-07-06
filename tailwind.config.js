@@ -10,6 +10,7 @@ module.exports = {
         basecolor: "#C3CAD9",
         navcolor: "#7D8FB3",
         bordercolor: "#EDEFF2",
+        textcolor: "#6B7A99",
       },
     },
   },

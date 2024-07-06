@@ -21,7 +21,7 @@ const Header = () => {
         </div>
 
         <div className="">
-          <ul className="flex gap-7 text-xs text-navcolor px-2">
+          <ul className="flex gap-7 text-xs font-medium text-navcolor px-2">
             <li>
               <a href="#">Dashboard</a>
             </li>
@@ -69,7 +69,7 @@ const Header = () => {
           <p className="text-sm p-2">Clayton Santos</p>
 
           <div className="relative  w-[50px] h-[50px] bg-white rounded-full">
-            <a href="">
+            <a href="#">
               <FontAwesomeIcon
                 icon={faBell}
                 className="text-basecolor p-4 text-lg "
@@ -79,7 +79,7 @@ const Header = () => {
           </div>
 
           <div className=" w-[50px] h-[50px] bg-white rounded-full">
-            <a href="">
+            <a href="#">
               <FontAwesomeIcon
                 icon={faCircleXmark}
                 className="text-basecolor p-4 text-lg "
