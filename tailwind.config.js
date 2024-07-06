@@ -12,6 +12,9 @@ module.exports = {
         bordercolor: "#EDEFF2",
         textcolor: "#6B7A99",
       },
+      bgColors: {
+        basecolor: "#C3CAD9",
+      },
     },
   },
   plugins: [],

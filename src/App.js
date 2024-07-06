@@ -3,20 +3,26 @@ import Menu from "./components/Menu";
 import Sidebar from "./components/Sidebar";
 import Header from "./components/header";
 import Mainbody from "./container/Mainbody";
+import { Outlet } from "react-router-dom";
 
 function App() {
   return (
-    <div className="relative">
-      <Header />
-      <div className="relative">
-        <Menu />
-
-        <div className="absolute top-0 right-0 overflow-x-hidden w-[23%] p-4 min-h-screen border-l-2 border-bordercolor">
+    <div>
+      <div>
+        <Header />
+      </div>
+      <div className="grid grid-cols-12">
+        <div className="col-span-1">
+          <Menu />
+        </div>
+        <div className="col-span-8">
+          <Outlet />
+          <Mainbody />
+        </div>
+        <div className="col-span-3 border-bordercolor border-l-2">
           <Sidebar />
         </div>
       </div>
-
-      <Mainbody />
     </div>
   );
 }
