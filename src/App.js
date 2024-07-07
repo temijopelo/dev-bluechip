@@ -8,18 +8,20 @@ import { Outlet } from "react-router-dom";
 function App() {
   return (
     <div>
-      <div>
+      <div className="">
         <Header />
       </div>
-      <div className="grid grid-cols-12">
-        <div className="col-span-1">
+      <div className="lg:grid xl:grid xl:grid-cols-12">
+        <div className="hidden xl:block xl:col-span-1">
           <Menu />
         </div>
-        <div className="col-span-8">
+        <div className="xl:col-span-8">
           <Outlet />
-          <Mainbody />
+          <div className="">
+            <Mainbody />
+          </div>
         </div>
-        <div className="col-span-3 border-bordercolor border-l-2">
+        <div className="hidden xl:block xl:col-span-3 xl:border-bordercolor xl:border-l-2">
           <Sidebar />
         </div>
       </div>

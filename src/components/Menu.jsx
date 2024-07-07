@@ -54,7 +54,7 @@ const Menu = () => {
   return (
     <>
       <div className=" flex flex-col justify-between  w-28 p-3 items-center border-r-2 border-bordercolor">
-        <div className="flex flex-col gap-3 pt-2 h-screen">
+        <div className="flex flex-col gap-3 pt-2 h-[95vh]">
           {menuItems.map((iconItem) => {
             return <DisplayIcon key={iconItem.id} icon={iconItem.icon} />;
           })}

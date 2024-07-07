@@ -31,7 +31,7 @@ const Sidebar = () => {
             alt=""
             className=" w-[110px] h-[110px] rounded-full p-2 border-2 border-purple-800 object-cover"
           />
-          <span class="absolute top-10 right-28 bg-[#FF6633] text-white text-xs font-bold rounded-full h-8 w-8 flex items-center justify-center transform translate-x-1/2 -translate-y-1/2">
+          <span class="absolute top-12 right-[130px] bg-[#FF6633] text-white text-xs font-bold rounded-full h-8 w-8 flex items-center justify-center transform translate-x-1/2 -translate-y-1/2">
             <FontAwesomeIcon className="p-4" icon={faCirclePlus} size="" />
           </span>
         </div>

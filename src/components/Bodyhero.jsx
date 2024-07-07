@@ -13,13 +13,11 @@ import img05 from "../assets/nike-removebg-preview.png";
 const DisplayListContent = (props) => {
   return (
     <div className="flex justify-between items-center p-3 overflow-y-auto border-t-2 border-bordercolor">
-      <div className="flex items-center gap-3">
-        <img
-          className="w-[50px] h-[50px] rounded-full p-3 bg-[#2aff86]"
-          src={props.img}
-          alt=""
-        />
-        <div className="flex gap-3">
+      <div className="flex items-center gap-3 p-2 ">
+        <div className="h-[50px] w-[50px] flex p-2 justify-center items-center bg-[#ebadeb] rounded-full">
+          <img className=" w-[50px]  object-cover  " src={props.img} alt="" />
+        </div>
+        <div className="flex flex-col xl:flex-row xl:gap-3">
           <h3 className="space-x-3 min-w-30 text-sm font-medium text-basecolor">
             {props.title}
           </h3>
@@ -27,7 +25,7 @@ const DisplayListContent = (props) => {
             {props.description}
           </p>
         </div>
-        <p className="text-green-500 bg-[#e6e8ec] rounded-full p-2 text-[10px] font-semibold">
+        <p className="hidden md:inline-block text-green-500 bg-[#e6e8ec] rounded-full p-2 text-[10px] font-semibold">
           {props.badge}
         </p>
       </div>
@@ -35,7 +33,7 @@ const DisplayListContent = (props) => {
         <p className="text-[10px] p-2 bg-[#e6e8ec] font-semibold rounded-full">
           {props.smallBadge}
         </p>
-        <div className="inline-block shadow-md mb-2 text-basecolor text-center  rounded-full w-[30px] h-[30px]  bg-white">
+        <div className="hidden md:inline-block shadow-md mb-2 text-basecolor text-center  rounded-full w-[30px] h-[30px]  bg-white">
           <a href="">
             <FontAwesomeIcon icon={faEllipsis} />
           </a>
@@ -128,9 +126,9 @@ const listDate = [
 const Bodyhero = () => {
   return (
     <>
-      <div className="w-[55%] bg-white rounded-2xl ">
-        <div className=" flex justify-between items-stretch px-4 py-2 ">
-          <span className="w-[50px] h-[50px] text-center shadow-md   bg-white rounded-full">
+      <div className="w-[100%] bg-white rounded-2xl min-h-[87vh] ">
+        <div className=" flex justify-between items-center px-4 py-2 ">
+          <span className="flex justify-center items-center w-[30px] h-[30px] text-center shadow-md   bg-white rounded-full">
             <a href="" className="inline-block ">
               <FontAwesomeIcon
                 className=" text-[#C3CAD9] p-4 "
@@ -139,17 +137,20 @@ const Bodyhero = () => {
             </a>
           </span>
           <ul className="flex  gap-4 text-xs font-bold  ">
-            <li className="py-6  hover:text-blue-700 hover:border-b-2 hover:border-blue-700 active:text-blue-700">
-              <a href="">Recent Operations</a>
+            <li className="py-6  hover:text-purple-600 hover:border-b-2 hover:border-purple-600 active:text-purple-600 border-b-2 border-transparent">
+              <a href="">
+                Recent{" "}
+                <span className="hidden md:inline-block">Operations</span>
+              </a>
             </li>
-            <li className="py-6  hover:text-blue-700 hover:border-b-2 hover:border-blue-700 active:text-blue-700">
+            <li className="py-6  hover:text-purple-600 hover:border-b-2 hover:border-purple-600 active:text-purple-600 border-b-2 border-transparent">
               <a href="">Income</a>
             </li>
-            <li className="py-6  hover:text-blue-700 hover:border-b-2 hover:border-blue-700 active:text-blue-700">
+            <li className="py-6  hover:text-purple-600 hover:border-b-2 hover:border-purple-600 active:text-purple-600 border-b-2 border-transparent">
               <a href="">Costs</a>
             </li>
           </ul>
-          <span className="w-[50px] h-[50px] text-center shadow-md   bg-white rounded-full">
+          <span className="flex justify-center items-center w-[30px] h-[30px] text-center shadow-md   bg-white rounded-full">
             <a href="" className="inline-block ">
               <FontAwesomeIcon
                 className=" text-[#C3CAD9] p-4 "
@@ -159,7 +160,7 @@ const Bodyhero = () => {
           </span>
         </div>
 
-        <div className="h-[30rem] overflow-auto ">
+        <div className="h-[33rem] overflow-auto ">
           {listDate.map((heroItem) => {
             return (
               <DisplayListContent
