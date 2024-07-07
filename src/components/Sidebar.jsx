@@ -178,7 +178,10 @@ const Sidebar = () => {
         <div className="bg-[#c9ad8c] flex flex-col gap-5 justify-center items-center p-4 mt-8 mx-8 rounded-lg">
           <img src={img02} alt="" className="w-[100px] h-[100px]" />
 
-          <a href="#" className="text-red-700">
+          <a
+            href="https://github.com/temijopelo/dev-bluechip/tree/main"
+            className="text-red-700"
+          >
             Do you need help?
           </a>
           <p>1-800-MY-BANK</p>

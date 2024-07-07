@@ -15,7 +15,7 @@ import img04 from "../assets/joshua-rawson-harris-dN67hPE5KWY-unsplash.jpg";
 const DisplayIcon = (props) => {
   return (
     <div className="inline-block shadow-md mb-2 text-basecolor text-center  rounded-full w-[50px] h-[50px]  bg-white">
-      <a href="">
+      <a href="https://github.com/temijopelo/dev-bluechip/tree/main">
         <FontAwesomeIcon className="p-4" icon={props.icon} />
       </a>
     </div>
@@ -95,7 +95,7 @@ const Menu = () => {
             />
           </div>
           <div className="inline-block text-basecolor text-center rounded-full w-[50px] h-[50px] bg-white">
-            <a href="">
+            <a href="https://github.com/temijopelo/dev-bluechip/tree/main">
               <FontAwesomeIcon className="p-4" icon={faCirclePlus} />
             </a>
           </div>

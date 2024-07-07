@@ -13,7 +13,10 @@ const Header = () => {
       <div className="flex p-3 justify-between items-center  border-b-2 border-bordercolor xl:p-5 ">
         <div className="flex items-center xl:px-3 xl:gap-7">
           <span className="w-[50px] h-[50px] text-center   bg-white rounded-full">
-            <a href="" className="inline-block ">
+            <a
+              href="https://github.com/temijopelo/dev-bluechip/tree/main"
+              className="inline-block "
+            >
               <FontAwesomeIcon className=" text-[#C3CAD9] p-4 " icon={faBars} />
             </a>
           </span>
@@ -25,22 +28,32 @@ const Header = () => {
         <div className=" ">
           <ul className=" font-medium text-navcolor px-2 hidden xl:flex xl:gap-7 xl:text-xs">
             <li>
-              <a href="#">Dashboard</a>
+              <a href="https://github.com/temijopelo/dev-bluechip/tree/main">
+                Dashboard
+              </a>
             </li>
             <li>
-              <a href="#">About Us</a>
+              <a href="https://github.com/temijopelo/dev-bluechip/tree/main">
+                About Us
+              </a>
             </li>
             <li>
-              <a href="#">News</a>
+              <a href="https://github.com/temijopelo/dev-bluechip/tree/main">
+                News
+              </a>
             </li>
             <li>
-              <a href="#">User Policy</a>
+              <a href="https://github.com/temijopelo/dev-bluechip/tree/main">
+                User Policy
+              </a>
             </li>
             <li>
-              <a href="#">Contacts</a>
+              <a href="https://github.com/temijopelo/dev-bluechip/tree/main">
+                Contacts
+              </a>
             </li>
             <li>
-              <a href="#">
+              <a href="https://github.com/temijopelo/dev-bluechip/tree/main">
                 <FontAwesomeIcon icon={faEllipsis} />
               </a>
             </li>
@@ -73,7 +86,7 @@ const Header = () => {
           </p>
 
           <div className="hidden md:inline xl:relative  xl:w-[50px] xl:h-[50px] md:bg-white md:rounded-full">
-            <a href="#">
+            <a href="https://github.com/temijopelo/dev-bluechip/tree/main">
               <FontAwesomeIcon
                 icon={faMagnifyingGlass}
                 className="text-basecolor p-4 text-lg "
@@ -82,7 +95,7 @@ const Header = () => {
           </div>
 
           <div className="hidden md:inline md:relative  md:w-[50px] md:h-[50px] md:bg-white md:rounded-full">
-            <a href="#">
+            <a href="https://github.com/temijopelo/dev-bluechip/tree/main">
               <FontAwesomeIcon
                 icon={faBell}
                 className="text-basecolor p-4 text-lg "
@@ -92,7 +105,7 @@ const Header = () => {
           </div>
 
           <div className="hidden md:block md:relative  md:w-[50px] md:h-[50px] md:bg-white md:rounded-full">
-            <a href="#">
+            <a href="https://github.com/temijopelo/dev-bluechip/tree/main">
               <FontAwesomeIcon
                 icon={faCircleXmark}
                 className="text-basecolor p-4 text-lg "
@@ -100,7 +113,7 @@ const Header = () => {
             </a>
           </div>
           <div className="md:flex md:justify-center md:items-center hidden md:relative  md:w-[50px] md:h-[50px] md:bg-white md:rounded-full xl:hidden">
-            <a href="#">
+            <a href="https://github.com/temijopelo/dev-bluechip/tree/main">
               <FontAwesomeIcon
                 icon={faXmark}
                 className="text-basecolor p-4 text-lg "

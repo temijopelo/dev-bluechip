@@ -2,8 +2,6 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDownUpAcrossLine } from "@fortawesome/free-solid-svg-icons";
 import { faEllipsis } from "@fortawesome/free-solid-svg-icons";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
-
 import img01 from "../assets/starbuck-removebg-preview.png";
 import img02 from "../assets/walmart-removebg-preview.png";
 import img03 from "../assets/netflix-removebg-preview.png";
@@ -34,7 +32,7 @@ const DisplayListContent = (props) => {
           {props.smallBadge}
         </p>
         <div className="hidden md:inline-block shadow-md mb-2 text-basecolor text-center  rounded-full w-[30px] h-[30px]  bg-white">
-          <a href="">
+          <a href="https://github.com/temijopelo/dev-bluechip/tree/main">
             <FontAwesomeIcon icon={faEllipsis} />
           </a>
         </div>
@@ -129,7 +127,10 @@ const Bodyhero = () => {
       <div className="w-[100%] bg-white rounded-2xl min-h-[87vh] ">
         <div className=" flex justify-between items-center px-4 py-2 ">
           <span className="flex justify-center items-center w-[30px] h-[30px] text-center shadow-md   bg-white rounded-full">
-            <a href="" className="inline-block ">
+            <a
+              href="https://github.com/temijopelo/dev-bluechip/tree/main"
+              className="inline-block "
+            >
               <FontAwesomeIcon
                 className=" text-[#C3CAD9] p-4 "
                 icon={faArrowDownUpAcrossLine}
@@ -138,20 +139,27 @@ const Bodyhero = () => {
           </span>
           <ul className="flex  gap-4 text-xs font-bold  ">
             <li className="py-6  hover:text-purple-600 hover:border-b-2 hover:border-purple-600 active:text-purple-600 border-b-2 border-transparent">
-              <a href="">
+              <a href="https://github.com/temijopelo/dev-bluechip/tree/main">
                 Recent{" "}
                 <span className="hidden md:inline-block">Operations</span>
               </a>
             </li>
             <li className="py-6  hover:text-purple-600 hover:border-b-2 hover:border-purple-600 active:text-purple-600 border-b-2 border-transparent">
-              <a href="">Income</a>
+              <a href="https://github.com/temijopelo/dev-bluechip/tree/main">
+                Income
+              </a>
             </li>
             <li className="py-6  hover:text-purple-600 hover:border-b-2 hover:border-purple-600 active:text-purple-600 border-b-2 border-transparent">
-              <a href="">Costs</a>
+              <a href="https://github.com/temijopelo/dev-bluechip/tree/main">
+                Costs
+              </a>
             </li>
           </ul>
           <span className="flex justify-center items-center w-[30px] h-[30px] text-center shadow-md   bg-white rounded-full">
-            <a href="" className="inline-block ">
+            <a
+              href="https://github.com/temijopelo/dev-bluechip/tree/main"
+              className="inline-block "
+            >
               <FontAwesomeIcon
                 className=" text-[#C3CAD9] p-4 "
                 icon={faEllipsis}
